@@ -1,0 +1,35 @@
+Akıllı Çöp Rotası Optimizasyonu, belediyelerin veya özel atık yönetim şirketlerinin operasyonel maliyetlerini düşürmeyi, yakıt tüketimini azaltmayı ve karbon ayak izini küçültmeyi amaçlayan entegre bir sistemdir. Geleneksel düzende çöp kamyonları sabit bir rotayı takip ederek her sokağa girer ve tüm kutuları kontrol eder. Bu projede ise sistem, sadece doluluk oranı belirli bir kritik seviyenin (%80 ve üzeri) üstünde olan çöp kutularını haritada işaretler ve şoförler için anlık olarak en verimli (en kısa/en hızlı) rotayı çizer.
+Sistemin Temel Bileşenleri
+Donanım (IoT) Katmanı: Çöp kutularının içine yerleştirilen ultrasonik mesafe sensörleri (çöpün yüksekliğini ölçerek doluluk oranını hesaplar) ve konum bildiren GPS modülleri.
+
+Veritabanı ve API Sunucusu: Tüm cihazlardan belirli aralıklarla gelen verilerin (Cihaz ID, doluluk yüzdesi, batarya durumu, sıcaklık uyarısı) toplandığı, işlendiği ve saklandığı merkez.
+
+Rota Algoritması Motoru: Veritabanındaki dolu kutuların koordinatlarını alıp, başlangıç noktasından itibaren tüm noktaları dolaşıp merkeze dönmeyi gerektiren rotayı optimize eden mantıksal katman.
+
+Kullanıcı Arayüzleri:
+
+Yönetici/Operasyon Paneli: Tüm çöp kutularının doluluk durumunun, filodaki araçların anlık konumlarının ve günlük istatistiklerin canlı harita üzerinde izlendiği web tabanlı kontrol ekranı.
+
+Şoför Ekranı: Sadece gitmesi gereken noktaları, sırasını ve navigasyon yönlendirmelerini gösteren dikkat dağıtmayan basitleştirilmiş arayüz.
+
+Proje Geliştirme Süreçleri
+Sıfırdan canlıya alınma aşamasına kadar projenin modüler olarak inşa edilmesi gereken adımlar:
+
+1-Veritabanı Mimarisinin Tasarımı  
+Temel Görevler: -Çöp kutuları, bölgeler, araçlar, şoförler, cihaz logları ve rotalar için ilişkisel tabloların (ER Diyagramı) kurulması.
+Kullanılması beklenen araçlar:SQL Server, MySQL
+2-Backend ve API Geliştirme
+Temel Görevler:-Uç noktaların veri göndereceği (POST) ve arayüzlerin bu verileri çekeceği (GET) güvenli servislerin yazılması. 
+Kullanılması beklenen araçlar:C#, PHP
+3-IoT Veri Simülasyonu 
+Temel Görevler:Elimizde binlerce fiziksel sensör olmadığı için, sisteme rastgele doluluk verisi ve koordinat basan bir test yazılımı oluşturulması. 
+Kullanılması beklenen araçlar:C# Windows Forms
+4-Rota Optimizasyon Algoritması
+Temel Görevler:Dolu kutuların koordinatlarını harita servisine gönderip en kısa rotayı hesaplayan (Gezgin Satıcı Problemi mantığı) fonksiyonun entegrasyonu.
+Kullanılması beklenen araçlar:OpenStreetMap, Google Maps API
+5-Yönetici ve Şoför Arayüzleri	
+Temel Görevler:Veritabanındaki verilerin web üzerinde canlı harita pinleri (yeşil=boş, kırmızı=dolu, gri=arızalı) olarak gösterilmesi ve panoların kodlanması.	
+Kullanılması beklenen araçlar:HTML, CSS, JavaScript, Bootstrap
+6-Test, Revizyon ve Sürüm Yönetimi	
+Temel Görevler:Sistemin anlık yüksek veri trafiğiyle yük testine sokulması, kodların uzak depoda birleştirilmesi ve olası darboğazların çözülmesi.
+Kullanılması beklenen araçlar:Git, GitHub
