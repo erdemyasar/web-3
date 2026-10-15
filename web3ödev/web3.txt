@@ -1,0 +1,16 @@
+CPanel ve Plesk panel genel olarak web hosting kontrol paneli olarak adlandırılarlar
+
+Temel İşlevleri (Ne İşe Yararlar?)
+Dosya Yönetimi: Sitenin HTML, CSS, PHP ve JavaScript kodlarını sunucuya yüklemeni sağlar (FTP bağlantısına alternatif olarak).
+
+Veritabanı İşlemleri: MySQL veya MS SQL veritabanları oluşturup, phpMyAdmin üzerinden tabloları yönetmeni sağlar.
+
+Alan Adı (Domain) Yönetimi: Alt alan adları (subdomain) açma, yönlendirme yapma veya DNS ayarlarını değiştirme işlemlerini halleder.
+
+Güvenlik ve SSL: Sitenin "Güvenli" (HTTPS) olarak görünmesini sağlayan SSL sertifikalarını tek tıkla kurar.
+
+1. cPanel (Linux)
+Sektörün en popüler ve standartlaşmış kontrol panelidir. Sadece Linux işletim sistemli sunucularda çalışır. Arayüzü çok klasiktir ve internetteki çoğu hosting eğitim videosu cPanel üzerinden anlatılır.
+
+2. Plesk Panel ("Less Panel" olarak duyduğun panel)
+cPanel'in en büyük rakibidir. En büyük avantajı hem Windows hem de Linux sunucularda çalışabilmesidir. Özellikle C# veya ASP.NET ile geliştirilmiş projeler barındırılacaksa Windows sunucuya ihtiyaç duyulacağı için Plesk tercih edilir. Arayüzü daha modern ve derli topludur.
