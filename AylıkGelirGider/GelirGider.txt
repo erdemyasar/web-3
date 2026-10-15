@@ -1,0 +1,9 @@
+Gelirler:
+8000TL burs alınacak
+15000TL aile desteği alınacak
+3000TL ek gelirler
+
+Giderler:
+11,500TL kira verilecek
+7000TL aylık mutfak alışveriş masrafı
+4000TL ek giderler (beklenmeyen giderler)
