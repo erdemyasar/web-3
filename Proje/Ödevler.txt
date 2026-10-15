@@ -1,0 +1,6 @@
+Yapılacak web sitesi için gerekli araştırmalar yapılacak
+Yapılan araştırmalar sonucunda bir proje ve yol çizilecek
+Çizilen yolda kullanılacak araçlar belirlenecek.
+Tasarım belirlenecek
+Web lll dersi için verilen konular incelenecek
+Web lll dersi için Github'a commit atılacak
