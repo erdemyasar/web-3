@@ -1,0 +1,6 @@
+ders programı 
+Pazartesi:Mesleki İngilizce ve İleri İngilizce
+Salı:İçerik Yönetim Sistemi I, Mobil Programlama I, Veritabanı II
+Çarşamba:Temel Muhasebe
+Perşembe:Web Programcılığı III
+Cuma:Mesleki Uygulama ve Proje I
